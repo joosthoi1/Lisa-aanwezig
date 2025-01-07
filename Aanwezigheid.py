@@ -56,7 +56,7 @@ while not teamId:
     
     if str.isdigit(teamNrStr):
         teamNr = int(teamNrStr) - 1
-        if teamNr >= 0 and teamNr <= len(teams):
+        if teamNr >= 0 and teamNr <= len(teams["personal_teams"]):
             teamId = teams["personal_teams"][teamNr]["id"]
         else:
             print(f"Vul een nummer van 1 tot en met {len(teams)+1} in")
